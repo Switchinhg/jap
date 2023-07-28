@@ -1,0 +1,131 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.experiencia, .habilidades , .educacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 3rem ;
+}
+
+
+/* hero */
+
+.hero{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.hero p{
+    width: 60%;
+}
+
+/* Links */
+
+.links{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+    border-top: solid black 1px;
+    padding: 1.2rem;
+
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    padding: .5rem .2rem;
+    border: solid black 1px;
+
+}
+.links a:hover{
+    background-color: rgb(112, 45, 45);
+    color: white;
+}
+
+
+
+/* Experiencia  */
+#experiencia{
+    padding: 1rem;
+}
+ table{
+   padding: 1rem;
+   border: solid black 1px;
+}
+td{
+    padding: 0 1rem;
+}
+
+
+/* Habilidades */
+#habilidades{
+    padding: 1rem;
+}
+.habilidades{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: .2rem ;
+}
+strong{
+    text-decoration: underline;
+}
+
+/* Educacion */
+#educacion{
+    padding: 1rem;
+}
+/* Footer */
+#perfiles, #contactar{
+    padding: 1rem;
+}
+.perfiles{
+    display: flex;
+    flex-direction: column;
+}
+.perfiles ul{
+    align-self: center;
+    justify-self: center;
+    margin-top: 2rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 6rem 0;
+}
+input{
+    padding: 0.2rem 1rem;
+    margin: .2rem 0;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+textarea{
+    resize:vertical;
+}
+input[type='submit']{
+    margin-top: 1rem;
+}
+input[type='submit']:hover{
+    background-color: rgb(187, 105, 105);
+    color: white;
+}

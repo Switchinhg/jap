@@ -1,0 +1,24 @@
+body{background-color: lightgray; font-family:Arial, Helvetica, sans-serif;}
+#h1{text-align: center; font-family:Arial, Helvetica, sans-serif; letter-spacing: 7px;}
+em{color: red}
+strong{background-color: white;}
+.titulo{background-color: grey; color: white; 
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    text-indent: 10px;
+    font-family:Arial, Helvetica, sans-serif;}
+    
+.html1 p{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+.paquete{margin-left: 13%; margin-right: 13%;}
+.parrafo {
+    color: rgb(40, 40, 40);
+    font-weight: lighter;
+    width: auto;
+    text-align: justify;
+    text-indent: 20px;
+}

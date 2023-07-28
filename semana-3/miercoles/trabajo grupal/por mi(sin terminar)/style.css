@@ -1,0 +1,12 @@
+.html2{
+    display: flex; 
+    width: 80%;
+    margin: auto;
+}
+img{
+    padding-right: 1rem;
+}
+
+.titulo{
+    background-color: gray;
+}

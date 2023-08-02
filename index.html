@@ -1,156 +1,93 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Curriculum Vitae</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="hero">
-        <h1 id="nombre">Mariana García</h1>
-        <p>Me apasionan temas como son: los negocios en Internet, la analítica web, la optimización web(A/B Testing, UX,...), el SEO, los móviles y el SoLoMo, el emprendimiento y las startups, las redes sociales aplicadas a los negocios, las tecnologías web, etc.</p><br>
-    </div>
-    <ul class="links">
-        <li><a href="#experiencia">Experiencia profesional</a></li>
-        <li><a href="#habilidades">Habilidades y conocimientos</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#perfiles">Perfiles sociales</a></li>
-        <li><a href="#contactar">Contactar</a></li>
-    </ul><br>
-    
-    <!-- Experiencia -->
-    <div class="experiencia">
-
-        <h2  id='experiencia'>Experiencia Profesional</h2><br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Empresa/Organización</th>
-                
-                    <th>Cargo</th>
-                    
-                    <th>Localización</th>
-                    
-                    <th>Desde-Hasta</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>Esri Argentina</td>
-                <td>Encabezando el equipo de desarrolladores</td>
-                <td>Buenos Aires (Argentina)</td>
-                <td>Marzo 2014 - Actualidad</td> 
-            </tr>
-            <tr>
-                <td>Upplication</td>
-                <td>Programadora Front-End</td>
-                <td>Montevideo</td>
-                <td>Noviembre2013 - Marzo 2015</td>
-            </tr>
-            <tr>
-                <td>Universidad de la República - Ingenieria</td>
-                <td>Profesora de Programación 1</td>
-                <td>Montevideo</td>
-                <td>Noviembre 2013 - Marzo 2015</td>
-            </tr>
-            <tr>
-                <td>Google Developers Group</td>
-                <td>Coordinadora nacional</td>
-                <td>Buenos Aires (Argentina)</td>
-                <td>Setiembre 2012 - Enero 2013</td>
-            </tr>
-        </table>
-    </div>
-
-
-    <!-- Habilidades -->
-    <div class="habilidades">
-
-        <h2  id='habilidades'>Habilidades y Conocimientos</h2><br>
-        <ul>
-            <li><Strong>Desarrollo web</Strong>: HTML5, CSS3, JavaScript, Python-Django, LESS, SASS, PHP, SEO, Node.js, MySQL, AngularJS,JQuery, Bootstrap, Dojo, Responsive Design, WordPress, Usabilidad, CoffeScript, etc.</li>
-                <li><Strong>Analitica web/métrica</Strong>: Google Analytics, Mixpanel, segment.io, etc</li>
-                <li><strong>Gestión</strong>: SCRUM, Gestión de comunidades y organizacion de eventos, Gestion de equipos, etc.</li>
-                <li><strong>Emprendimiento</strong>: startups, Lean Startup, etc.</li>
-                <li><strong>Aplicaciones Móviles</strong>: Phonegap.</li>
-                <li><strong>Marketing</strong>: email marketing, redes sociales, gramificación, nature marketing, lead scoring, etc.</li>
-                <li><strong>Sistemas de la información geográfica (GIS)</strong>: AreGis, APIs</li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+          </li>
         </ul>
+      </div>
     </div>
-
-
-    <!-- Educacion -->
-    <div class="educacion"> 
-        <h2  id='educacion'>Educación</h2><br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Entidad</th>
-                    <th>Promoción</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>Desarrollo web</td>
-                <td>Plan Ceibal(Jovenes a programar)</td>
-                <td>2019</td>
-            </tr>
-            <tr>
-                <td>Curso: creación de empresas</td>
-                <td>Escuela de Negocios</td>
-                <td>2009</td>
-            </tr>
-        </table>
+  </nav>
+  <main>
+    <div class="jumbotron text-center"></div>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="autos">
+              <img class="bd-placeholder-img card-img-top" src="img/cars_index.jpg"
+                alt="Imgagen representativa de la categoría 'Autos'">
+              <h3 class="m-3">Autos</h3>
+              <div class="card-body">
+                <p class="card-text">Los mejores precios en autos 0 kilómetro, de alta y media gama.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="juguetes">
+              <img class="bd-placeholder-img card-img-top" src="img/toys_index.jpg"
+                alt="Imgagen representativa de la categoría 'Juguetes'">
+              <h3 class="m-3">Juguetes</h3>
+              <div class="card-body">
+                <p class="card-text">Encuentra aquí los mejores precios para niños/as de cualquier edad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="muebles">
+              <img class="bd-placeholder-img card-img-top" src="img/furniture_index.jpg"
+                alt="Imgagen representativa de la categoría 'Muebles'">
+              <h3 class="m-3">Muebles</h3>
+              <div class="card-body">
+                <p class="card-text">Muebles antiguos, nuevos y para ser armados por uno mismo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <a class="btn btn-light btn-lg btn-block" href="categories.html">Y mucho más!</a>
+        </div>
+      </div>
     </div>
-
-    
-    <!-- Footer -->
-    <footer class="footer">
-
-        <!-- Perfiles -->
-        <div class="perfiles">
-            <h2  class="perfiles" id="perfiles">Perfiles Sociales</h2>
-            <p>También puedes encontrarme en:</p>
-            <ul>
-                <li><a href="CV.html" target="_blank">Mariana García</a></li>
-                <li><a href="http://www.github.com" target="_blank">Github</a></li>
-                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-                <li><a href="http://www.linkedin.com" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
-        
-        
-        <!-- Contacto -->
-        <div class="contacto">
-                <h2  class="contactar" id="contactar">Contactar</h2>
-                
-            <form action="#">
-                    <label for="email">Nombre: </label>
-                    <input type="text" name="email" id="email">
-                    <label for="tematica">Temática:</label>
-                    <select name="tematicas" id="tematica">
-                        <option value="selecciona">Selecciona una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="propuesta">Propuesta</option>
-                        <option value="reporte">Reporte</option>
-                        <option value="otro">Otro</option>
-                    </select>
-
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto" id="asunto">
-                    <label for="cuerpo">Cuerpo:</label>
-                    <textarea name="Cuerpo" id="cuerpo"></textarea>
-
-
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    </footer>
-
-
-
-
-<!-- Miguel Soffarelli, Rodrigo Martinez, Mariana Oneto, Santiago Font, Francisco Claus, Federico Cirillo   -->
-
-
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/init.js"></script>
 </body>
+
 </html>

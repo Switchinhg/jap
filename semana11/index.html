@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peticion POST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body style="height: 100vh;" class="d-flex pt-5 justify-content-center align-items-center ">
+
+        <form id="form" class="d-flex flex-column gap-2 " style="min-width: 350px"> 
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="Nombre" id="nombre" class="form-control">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="Apellido" id="apellido" class="form-control">
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fechaDeNacimiento" id="fecha"class="form-control">
+            </div>
+            <input type="submit" value="Registrarse" class="btn btn-outline-primary">
+        </form>
+  </body>
+
+  <script>
+    let url= "https://jsonplaceholder.typicode.com/users"
+    let form = document.getElementById('form')
+
+    async function fetchJSON(e){
+            try{
+                const request = await fetch(url,{
+                    method:'POST',
+                    body: JSON.stringify({
+                        name: e.target[0].value,
+                        lastname: e.target[1].value,
+                        date: e.target[2].value,
+                    })
+                })
+                const resp = await request.json()
+                return resp
+            }
+            catch(e){
+                console.log('error! ', e)
+            }
+    }
+
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault()
+        fetchJSON(e)
+
+    })
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</html>
